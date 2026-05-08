@@ -1,0 +1,17 @@
+Task,Model,Accuracy,F1,AUC
+severity,LightGBM,33.7,0.3214,0.4977
+severity,CatBoost,32.6,0.3254,0.4943
+severity,Random Forest,31.51,0.3065,0.4851
+severity,Ensemble,32.6,0.3134,0.4924
+binary,LightGBM,48.77,0.485,0.4844
+binary,CatBoost,47.95,0.4713,0.4709
+binary,Random Forest,49.04,0.4911,0.4691
+binary,Ensemble,49.32,0.491,0.4768
+anxiety,LightGBM,56.99,0.5663,0.5224
+anxiety,CatBoost,53.97,0.53,0.5036
+anxiety,Random Forest,52.33,0.5162,0.5109
+anxiety,Ensemble,54.52,0.5301,0.5171
+depression,LightGBM,53.42,0.5241,0.4821
+depression,CatBoost,53.42,0.5185,0.5019
+depression,Random Forest,53.42,0.5269,0.4887
+depression,Ensemble,55.07,0.5378,0.492

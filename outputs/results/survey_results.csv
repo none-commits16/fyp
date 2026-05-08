@@ -1,0 +1,13 @@
+Component,Task,Model,Accuracy,F1,AUC
+B — Survey,PHQ4_severity_4class,LightGBM,42.19,0.4164,0.678
+B — Survey,PHQ4_severity_4class,CatBoost,47.4,0.4693,0.7098
+B — Survey,PHQ4_severity_4class,Random Forest,47.95,0.4595,0.7177
+B — Survey,PHQ4_severity_4class,Ensemble,46.3,0.4561,0.7003
+B — Survey,Depression_binary,LightGBM,51.78,0.5093,0.4917
+B — Survey,Depression_binary,CatBoost,52.88,0.5129,0.481
+B — Survey,Depression_binary,Random Forest,53.7,0.5327,0.5219
+B — Survey,Depression_binary,Ensemble,52.05,0.5085,0.4918
+B — Survey,Anxiety_binary,LightGBM,100.0,1.0,1.0
+B — Survey,Anxiety_binary,CatBoost,100.0,1.0,1.0
+B — Survey,Anxiety_binary,Random Forest,100.0,1.0,1.0
+B — Survey,Anxiety_binary,Ensemble,100.0,1.0,1.0
