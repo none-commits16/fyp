@@ -5,6 +5,7 @@
 ### 1. Clone the repository
 
 git clone https://github.com/none-commits16/fyp.git
+
 cd fyp
 
 ### 2. Create virtual environment
@@ -48,7 +49,9 @@ Contact any team member directly — file is `data_collection.csv`
 Create a `data/` folder in the project root and organise like this:
 
 FYP/
+
 └── data/
+
     ├── depresjon/
     │   ├── condition/        ← condition_1.csv ... condition_23.csv
     │   ├── control/          ← control_1.csv ... control_32.csv
