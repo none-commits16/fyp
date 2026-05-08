@@ -1,33 +1,52 @@
-1. Clone the repository
-bashgit clone https://github.com/YOURUSERNAME/mental-health-monitoring-fyp.git
-cd mental-health-monitoring-fyp
-2. Create virtual environment
-bashpython -m venv venv
+
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
+
+git clone https://github.com/none-commits16/fyp.git
+cd fyp
+
+### 2. Create virtual environment
+
+python -m venv venv
 
 # Windows
 venv\Scripts\activate
 
 # Mac/Linux
 source venv/bin/activate
-3. Install dependencies
-bashpip install -r requirements.txt
 
-How to download DEPRESJON
 
-Go to (https://datasets.simula.no/depresjon/)
-Download depresjon-dataset.zip
-Extract it
+### 3. Install dependencies
 
-How to download PSYKOSE
+pip install -r requirements.txt
 
-Go to (https://datasets.simula.no/psykose/)
-Download all files and folders
-Extract it
+## 📦 Dataset Setup
 
-Survey data
-Contact any team member — file is data_collection.csv
-Required folder structure
-Create a data/ folder in the project root and organise like this:
+> ⚠️ Data is NOT included in this repository. Download each dataset manually.
+
+### Download DEPRESJON
+
+1. Go to [https://datasets.simula.no/depresjon/](https://datasets.simula.no/depresjon/)
+2. Download `depresjon-dataset.zip`
+3. Extract it
+
+### Download PSYKOSE
+
+1. Go to [https://datasets.simula.no/psykose/](https://datasets.simula.no/psykose/)
+2. Download all files and folders
+3. Extract it
+
+### Survey Data
+
+Contact any team member directly — file is `data_collection.csv`
+
+
+## 🗂️ Required Folder Structure
+
+Create a `data/` folder in the project root and organise like this:
+
 FYP/
 └── data/
     ├── depresjon/
@@ -38,4 +57,4 @@ FYP/
     │   ├── patient/          ← patient CSV files
     │   ├── control/          ← control CSV files
     │   └── patients_info.csv
-    └── data_collection.csv   ← survey data
+    └── data_collection.csv   ← survey data (get from team)
