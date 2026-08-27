@@ -5,3 +5,8 @@ __pycache__/
 *.pyc
 *.pkl
 .vscode/
+catboost_info/
+__pycache__/
+*.pyc
+venv/
+.venv/
