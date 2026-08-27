@@ -1,0 +1,16 @@
+Class,Rank,Feature,Mean_Absolute_SHAP
+Healthy,1,Std Activity,0.3019859067314325
+Healthy,2,CNN_Embedding_44,0.15348495846024718
+Healthy,3,Morning Activity,0.12833949873669676
+Healthy,4,CNN_Embedding_48,0.1267071818647757
+Healthy,5,CNN_Embedding_45,0.10465833725813893
+Depression,1,CNN_Embedding_42,0.15856574187310388
+Depression,2,Afternoon Activity,0.15824696632011315
+Depression,3,Night Activity,0.15774819037737683
+Depression,4,Peak Count,0.1346976185601442
+Depression,5,Std Activity,0.11401008913116006
+Schizophrenia,1,Std Activity,0.41061836441140326
+Schizophrenia,2,Night Activity,0.2154752494295798
+Schizophrenia,3,CNN_Embedding_42,0.21334415617088098
+Schizophrenia,4,Morning Activity,0.1713906475827298
+Schizophrenia,5,CNN_Embedding_44,0.16075538240058193
