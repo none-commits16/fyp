@@ -1,0 +1,4 @@
+,Predicted Healthy,Predicted Depression,Predicted Schizophrenia
+Actual Healthy,222,18,5
+Actual Depression,65,20,28
+Actual Schizophrenia,39,1,24
