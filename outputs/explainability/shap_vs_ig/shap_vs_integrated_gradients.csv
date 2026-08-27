@@ -1,0 +1,9 @@
+Aspect,SHAP,Integrated Gradients
+Explainability method,SHAP,Integrated Gradients
+Primary input,Tabular features,1440-minute activity sequence
+Model type,Tree-based models,1D CNN
+Explanation unit,Feature,Individual time point
+Main purpose,Identify influential survey/activity features,Identify influential portions of daily activity
+Output interpretation,Contribution of each feature to prediction,Attribution of activity observations to target class
+Strength,Global and local feature-level interpretation,Captures deep-learning sequence behaviour
+Limitation,Does not directly explain minute-level CNN patterns,Sensitive to baseline and model/input representation

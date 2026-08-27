@@ -41,11 +41,11 @@ for file in psykose_files[:5]:
 
 # DEPRESJON
 depresjon_condition_files = glob.glob(
-    os.path.join(DEPRESJON_DIR, "data", "condition", "*.csv")
+    os.path.join(DEPRESJON_DIR, "condition", "*.csv")
 )
 
 depresjon_control_files = glob.glob(
-    os.path.join(DEPRESJON_DIR, "data", "control", "*.csv")
+    os.path.join(DEPRESJON_DIR, "control", "*.csv")
 )
 
 
@@ -1268,6 +1268,23 @@ for fold, (train_idx, test_idx) in enumerate(
 
         verbose=1
     )
+
+    # --------------------------------------------------------
+    # 8B. SAVE TRAINED CNN MODEL FOR EXPLAINABILITY
+# --------------------------------------------------------
+
+    os.makedirs(
+        "outputs/deep_learning/models",
+        exist_ok=True
+)
+
+    model.save(
+        f"outputs/deep_learning/models/cnn_fold_{fold}.keras"
+)
+
+    print(
+        f"Saved CNN model for fold {fold}"
+)
 
 
     # --------------------------------------------------------
