@@ -10,3 +10,4 @@ seaborn
 joblib
 scipy
 streamlit
+antropy
