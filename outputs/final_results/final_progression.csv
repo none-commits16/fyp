@@ -1,0 +1,7 @@
+Stage,Method,Accuracy,F1,AUC
+Baseline,LightGBM,77.0996,73.6784,88.4367
+Imbalance Handling,LightGBM + Borderline-SMOTE,79.8268,77.8625,91.1158
+Feature Enhancement,LightGBM + Enhanced 27 Features,80.6926,77.7791,92.6513
+Hybrid A,1D-CNN,78.87,75.28,90.93
+Hybrid B,CNN + Features + LightGBM,79.83,77.11,89.56
+Hybrid C - Final,Full Nested Stacking,80.69,78.49,92.54

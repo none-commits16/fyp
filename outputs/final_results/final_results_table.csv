@@ -1,0 +1,22 @@
+Stage,Method,Accuracy,Accuracy_SD,F1,F1_SD,AUC,AUC_SD,Notes,Accuracy_Result,F1_Result,AUC_Result
+Baseline,Random Forest,74.329,,70.4332,,86.057,,18 handcrafted baseline features,74.33%,70.43%,86.06%
+Baseline,CatBoost,75.2381,,71.3531,,84.6935,,18 handcrafted baseline features,75.24%,71.35%,84.69%
+Baseline,LightGBM,77.0996,,73.6784,,88.4367,,18 handcrafted baseline features,77.10%,73.68%,88.44%
+Imbalance Handling,Random Forest + ADASYN,76.1472,13.0063,73.9429,14.0359,86.8269,11.7401,Class imbalance correction,76.15% ± 13.01%,73.94% ± 14.04%,86.83% ± 11.74%
+Imbalance Handling,CatBoost + ADASYN,74.2424,14.0509,72.6926,15.9486,85.774,12.0814,Class imbalance correction,74.24% ± 14.05%,72.69% ± 15.95%,85.77% ± 12.08%
+Imbalance Handling,LightGBM + ADASYN,78.9177,12.2391,76.5522,14.972,89.082,10.2524,Class imbalance correction,78.92% ± 12.24%,76.55% ± 14.97%,89.08% ± 10.25%
+Imbalance Handling,Random Forest + Borderline-SMOTE,73.3766,13.0518,68.7015,15.1998,85.0678,12.2682,Class imbalance correction,73.38% ± 13.05%,68.70% ± 15.20%,85.07% ± 12.27%
+Imbalance Handling,CatBoost + Borderline-SMOTE,76.1039,9.9903,73.6632,11.506,83.5999,12.2622,Class imbalance correction,76.10% ± 9.99%,73.66% ± 11.51%,83.60% ± 12.26%
+Imbalance Handling,LightGBM + Borderline-SMOTE,79.8268,8.2186,77.8625,10.2451,91.1158,9.3908,Class imbalance correction,79.83% ± 8.22%,77.86% ± 10.25%,91.12% ± 9.39%
+Imbalance Handling,Random Forest + Class Weight,74.329,6.8029,69.6527,9.8961,85.5324,11.4279,Class imbalance correction,74.33% ± 6.80%,69.65% ± 9.90%,85.53% ± 11.43%
+Imbalance Handling,CatBoost + Class Weight,76.1472,8.1153,73.8251,9.1089,83.6237,12.7058,Class imbalance correction,76.15% ± 8.12%,73.83% ± 9.11%,83.62% ± 12.71%
+Imbalance Handling,LightGBM + Class Weight,76.1039,10.4946,73.0149,13.6338,87.3622,8.0491,Class imbalance correction,76.10% ± 10.49%,73.01% ± 13.63%,87.36% ± 8.05%
+Feature Enhancement,Random Forest + Enhanced 27 Features,75.2381,,71.0411,,89.8118,,"IS, IV, RA, time segments, Sample Entropy, LZ",75.24%,71.04%,89.81%
+Feature Enhancement,CatBoost + Enhanced 27 Features,76.1472,,72.7222,,89.3523,,"IS, IV, RA, time segments, Sample Entropy, LZ",76.15%,72.72%,89.35%
+Feature Enhancement,LightGBM + Enhanced 27 Features,80.6926,,77.7791,,92.6513,,"IS, IV, RA, time segments, Sample Entropy, LZ",80.69%,77.78%,92.65%
+Feature Enhancement,Random Forest + Enhanced 27 + Borderline-SMOTE,73.4199,,70.916,,87.9927,,Enhanced features + imbalance correction,73.42%,70.92%,87.99%
+Feature Enhancement,CatBoost + Enhanced 27 + Borderline-SMOTE,73.4199,,70.7316,,87.4554,,Enhanced features + imbalance correction,73.42%,70.73%,87.46%
+Feature Enhancement,LightGBM + Enhanced 27 + Borderline-SMOTE,74.2857,,72.8429,,90.1841,,Enhanced features + imbalance correction,74.29%,72.84%,90.18%
+Hybrid,1D-CNN,78.87,9.49,75.28,12.93,90.93,5.98,Raw 15-minute activity sequences,78.87% ± 9.49%,75.28% ± 12.93%,90.93% ± 5.98%
+Hybrid,CNN + 27 Features + LightGBM,79.83,10.43,77.11,9.93,89.56,7.43,CNN embedding + handcrafted features,79.83% ± 10.43%,77.11% ± 9.93%,89.56% ± 7.43%
+Hybrid - Final,Full Nested Stacking,80.69,7.61,78.49,8.99,92.54,7.51,RF + CatBoost + LightGBM + CNN-fusion + Logistic Regression meta-learner,80.69% ± 7.61%,78.49% ± 8.99%,92.54% ± 7.51%

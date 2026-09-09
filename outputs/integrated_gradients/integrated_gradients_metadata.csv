@@ -1,0 +1,2 @@
+subject_id,date,true_class,predicted_class,healthy_probability,depression_probability,schizophrenia_probability,attribution_sum,prediction_difference,training_mean,training_std
+condition_10,2004-08-31,Depression,Schizophrenia,0.039666627,0.4525599,0.5077735,0.17199159,0.17146826,170.63043,280.77292

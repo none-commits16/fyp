@@ -1,17 +1,15 @@
 venv/
-data/
-outputs/models/
-__pycache__/
-*.pyc
-*.pkl
-.vscode/
-catboost_info/
-__pycache__/
-*.pyc
-venv/
 .venv/
 data/
 
+__pycache__/
+*.pyc
+*.pkl
+
+.vscode/
+catboost_info/
 tempCodeRunnerFile.py
 
-outputs/explainability/integrated_gradients_multi/ig_all_sequences.csv
+outputs/models/
+outputs/integrated_gradients/*.keras
+outputs/hybrid/stepA/*.keras
